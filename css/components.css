@@ -1,0 +1,389 @@
+/* Components CSS - Japanese Rural Theme Components */
+
+/* Button Components */
+.btn-primary {
+    background: var(--accent-green);
+    color: var(--text-light);
+    border: 2px solid var(--border-wood);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background: var(--accent-red);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--border-wood);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--accent-orange);
+    color: var(--text-light);
+}
+
+/* Card Components */
+.card-wood {
+    background: url('../japanese_wood_card.png');
+    background-size: cover;
+    border: 2px solid var(--border-wood);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-wood::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(245, 245, 220, 0.8);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.card-light {
+    background: rgba(245, 245, 220, 0.95);
+    border: 2px solid var(--border-light);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge Components */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-primary {
+    background: var(--accent-green);
+    color: var(--text-light);
+}
+
+.badge-secondary {
+    background: var(--accent-orange);
+    color: var(--text-light);
+}
+
+.badge-accent {
+    background: var(--accent-red);
+    color: var(--text-light);
+}
+
+/* Alert Components */
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 2px solid;
+}
+
+.alert-info {
+    background: rgba(143, 188, 143, 0.2);
+    border-color: var(--accent-green);
+    color: var(--text-primary);
+}
+
+.alert-warning {
+    background: rgba(255, 160, 122, 0.2);
+    border-color: var(--accent-orange);
+    color: var(--text-primary);
+}
+
+.alert-success {
+    background: rgba(205, 92, 92, 0.2);
+    border-color: var(--accent-red);
+    color: var(--text-primary);
+}
+
+/* Form Components */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--border-light);
+    border-radius: 6px;
+    background: rgba(245, 245, 220, 0.9);
+    color: var(--text-primary);
+    font-family: 'Nunito', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-green);
+    box-shadow: 0 0 0 2px rgba(143, 188, 143, 0.2);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Navigation Components */
+.nav-tabs {
+    display: flex;
+    border-bottom: 2px solid var(--border-wood);
+    margin-bottom: 20px;
+}
+
+.nav-tab {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.nav-tab:hover,
+.nav-tab.active {
+    color: var(--text-primary);
+    border-bottom-color: var(--accent-green);
+    background: rgba(143, 188, 143, 0.1);
+}
+
+/* Progress Components */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: rgba(245, 245, 220, 0.5);
+    border: 2px solid var(--border-light);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-green), var(--accent-orange));
+    transition: width 0.3s ease;
+    border-radius: 8px;
+}
+
+/* Modal Components */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: url('../japanese_wood_card.png');
+    background-size: cover;
+    border: 3px solid var(--border-wood);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(245, 245, 220, 0.95);
+    border-radius: 12px;
+    z-index: -1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.modal-close:hover {
+    color: var(--accent-red);
+}
+
+/* Tooltip Components */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background: var(--accent-dark);
+    color: var(--text-light);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.8rem;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Loading Components */
+.loading-spinner {
+    border: 3px solid rgba(245, 245, 220, 0.3);
+    border-top: 3px solid var(--accent-green);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Accordion Components */
+.accordion-item {
+    border: 2px solid var(--border-light);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background: rgba(245, 245, 220, 0.9);
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: rgba(143, 188, 143, 0.2);
+}
+
+.accordion-content {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+/* Breadcrumb Components */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(245, 245, 220, 0.5);
+    border-radius: 6px;
+}
+
+.breadcrumb-item {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb-item:hover {
+    color: var(--text-primary);
+}
+
+.breadcrumb-separator {
+    margin: 0 10px;
+    color: var(--text-secondary);
+}
+
+.breadcrumb-item.active {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+
+.hidden { display: none; }
+.visible { display: block; }
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
